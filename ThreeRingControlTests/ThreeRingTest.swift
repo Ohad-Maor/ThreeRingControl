@@ -22,6 +22,7 @@
 
 import XCTest
 import ThreeRingControl
+import Alamofire
 
 class ThreeRingTest: XCTestCase {
 
@@ -45,5 +46,12 @@ class ThreeRingTest: XCTestCase {
         let _ = expectation(forNotification: RingCompletedNotification, object: nil, handler: nil)
         let _ = expectation(forNotification: AllRingsCompletedNotification, object: nil, handler: nil)
         waitForExpectations(timeout: 0.1, handler: nil)
+        
+        Alamofire.request("https://httpbin.org/post", method: .post).responseJSON
+            {
+                (response : DataResponse<Any>) in
+                
+                print(response)
+        }
     }
 }
