@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ThreeRingControl"
-  s.version      = "1.2.0"
+  s.version      = "1.3.0"
   s.summary      = "A three-ring control like the Activity status bars"
 
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/Ohad-Maor/ThreeRingControl.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/Ohad-Maor/ThreeRingControl.git", :tag => "1.3.0" }
 
 
   s.source_files = "ThreeRingControl", "ThreeRingControl/**/*.{h,m,swift}"
