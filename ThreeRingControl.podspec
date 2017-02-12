@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
 
   s.resources    = "ThreeRingControl/*.mp3"
 
-  # s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 end
