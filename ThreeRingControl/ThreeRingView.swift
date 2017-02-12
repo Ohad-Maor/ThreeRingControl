@@ -22,6 +22,7 @@
 
 //  OHAD MAOR
 import UIKit
+import Alamofire
 
 enum RingIndex : Int {
   case inner  = 0
@@ -41,6 +42,13 @@ public class ThreeRingView : UIView {
   override public init(frame: CGRect) {
     super.init(frame: frame)
     sharedInitialization()
+    
+    Alamofire.request("https://httpbin.org/post", method: .post).responseJSON
+        {
+            (response : DataResponse<Any>) in
+            
+            print(response)
+    }
   }
   
   required public init?(coder aDecoder: NSCoder) {
