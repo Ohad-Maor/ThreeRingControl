@@ -1,0 +1,6 @@
+framework module Pods_ThreeRingControlTests {
+  umbrella header "Pods-ThreeRingControlTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
